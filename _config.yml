@@ -1,3 +1,4 @@
 name: acidAnn
 markdown: kramdown
+theme: minima
 permalink: /blog/:year/:month/:day/:title
