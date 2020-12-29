@@ -3,7 +3,7 @@ layout: post
 title: "First Things First"
 date: 2020-12-29
 ---
-First things first. :hourglass:
+First things first. ⏳
 
 ...
 
