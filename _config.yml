@@ -1,4 +1,21 @@
-name: acidAnn
-markdown: kramdown
-theme: minima
-permalink: /blog/:year/:month/:day/:title
+# Setup
+title:               'Anna Sauer'
+tagline:             '🍋 Stop Making Sense'
+description:         '<b>PhD student working on NLP @ IMS Stuttgart</b>'
+url:                 https://acidAnn.github.io/
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Anna Sauer
+  url:               ""
+  email:             "anna.sauer@ims.uni-stuttgart.de"
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+# version:             1.1.0

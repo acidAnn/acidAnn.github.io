@@ -1,8 +1,55 @@
 ---
 layout: default
-title: acidAnn
+title: Home
 ---
-<div class="blurb">
-	<h1>🍋 Hi there, I'm acidAnn!</h1>
-	<p>Welcome on this page.</p>
-</div><!-- /.blurb -->
+<div>
+	<h1>Hi there!</h1>
+	<div>
+		<p>I'm a first year PhD student at the <a href="https://www.ims.uni-stuttgart.de/en/">Institute for Natural Language Processing</a>, University of Stuttgart.</p>
+		<p>I'm part of the research group <a href="https://www.ims.uni-stuttgart.de/en/institute/researchgroups/mist/">Computational Models of Misunderstanding for Complex Instructional Texts (MisT)</a> 
+		supervised by <a href="https://www.ims.uni-stuttgart.de/en/institute/team/Roth-00006/">Dr. Michael Roth</a>.</p>
+		<p>I'm working on natural language processing (NLP). My research goal is to <b>model the potential for conflicting interpretations in written texts</b>.</p>
+		<p>My research interests include<p>
+		 <ul>
+  			<li>ambiguity, of the intentional and the unintentional kind</li>
+  			<li>text structure, coherence and cohesion</li>
+  			<li>the difference between implicit and explicit meaning</li>
+			<li>relation extraction and knowledge graphs</li>
+			<li>few-shot learning, knowledge distillation and other fun ways of thinking about resource efficiency in machine learning</li>
+		</ul> 
+		<p>By the way, if you are wondering why a 🍋 pops up every now and then on this page, my last name "Sauer" (/ˈzaʊ̯ɐ/) means "sour" or "acid" in <a href="https://en.wiktionary.org/wiki/sauer#German">German</a>.</p>
+	</div>
+</div>
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | absolute_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
+
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+    {% else %}
+      <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
