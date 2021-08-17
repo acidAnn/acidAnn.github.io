@@ -2,7 +2,7 @@
 title:               'Anna Sauer'
 tagline:             '🍋 Stop Making Sense'
 description:         '<b>PhD student working on NLP @ IMS Stuttgart</b>'
-url:                 https://acidAnn.github.io/
+url:                 https://acidAnn.github.io
 baseurl:             ''
 paginate:            5
 permalink:           pretty
