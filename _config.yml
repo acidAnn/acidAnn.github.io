@@ -1,6 +1,7 @@
 # Setup
 title:               'Anna Sauer'
-tagline:             '🍋 Stop Making Sense'
+symbol:              '🍋'
+tagline:             'Stop Making Sense'
 description:         '<b>PhD student working on NLP @ IMS Stuttgart</b>'
 url:                 https://acidAnn.github.io
 baseurl:             ''
@@ -16,6 +17,3 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
-
-# Custom vars
-# version:             1.1.0
