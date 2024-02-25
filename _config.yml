@@ -1,8 +1,8 @@
 # Setup
-title:               'Anna Sauer'
+title:               'acidAnn'
 symbol:              '🍋'
 tagline:             'Stop Making Sense'
-description:         '<b>PhD student working on NLP @ IMS Stuttgart</b>'
+description:         'A personal page'
 url:                 https://acidAnn.github.io
 baseurl:             ''
 paginate:            5
@@ -10,9 +10,9 @@ permalink:           pretty
 
 # About/contact
 author:
-  name:              Anna Sauer
+  name:              acidAnn
   url:               ""
-  email:             "anna.sauer@ims.uni-stuttgart.de"
+  email:             ""
 
 # Gems
 plugins:
